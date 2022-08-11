@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        &lt;!&ndash;<property name="url" value="jdbc:mysql://172.30.16.28:3306/EGIF_DB"/>&ndash;&gt;
+        <property name="url" value="jdbc:mysql://localhost:3306/damc"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        &lt;!&ndash;<property name="username" value="root"/>
+        <property name="password" value="root"/>&ndash;&gt;
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="validationQuery" value="SELECT 1"/>
+    </bean>-->
+
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="url" value="jdbc:mysql://192.168.0.6:3306/cdb_local"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="username" value="root"/>
+        <property name="password" value="Z0t1n9@2o2o"/>
+        <property name="validationQuery" value="SELECT 1"/>
+    </bean>
+
+</beans>
